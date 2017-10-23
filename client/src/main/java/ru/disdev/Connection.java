@@ -6,8 +6,8 @@ import javafx.beans.property.StringProperty;
 public class Connection {
 
     private StringProperty host = new SimpleStringProperty("127.0.0.1");
-    private StringProperty port = new SimpleStringProperty("1234");
-    private StringProperty name = new SimpleStringProperty("");
+    private StringProperty port = new SimpleStringProperty("1213");
+    private StringProperty name = new SimpleStringProperty("test");
 
     public String getHost() {
         return host.get();

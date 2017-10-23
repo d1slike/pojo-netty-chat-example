@@ -20,6 +20,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         mainStage = primaryStage;
+        mainStage.setTitle(PROGRAM_NAME);
         Pane pane = FXMLLoader.load(getFXMLUrl("/main.fxml"));
         Scene scene = new Scene(pane);
         primaryStage.setScene(scene);
@@ -37,6 +38,10 @@ public class Main extends Application {
         }
         childStage.setTitle(title);
         return childStage;
+    }
+
+    public static Stage getMainStage() {
+        return mainStage;
     }
 
     public static URL getFXMLUrl(String fileName) {
