@@ -19,6 +19,7 @@ public class Main {
         Server server = Server.builder()
                 .stringCharset(charset)
                 .useLE(true)
+                .port(1234)
                 .onException((channel, throwable) -> throwable.printStackTrace())
                 .notMappedDataFunction(byteBuf -> {
                     int length = byteBuf.readIntLE();

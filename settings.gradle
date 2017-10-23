@@ -1,4 +1,5 @@
 rootProject.name = 'chat'
 include 'commons'
 include 'server'
+include 'client'
 
